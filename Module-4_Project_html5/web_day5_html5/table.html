@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="styles/nav.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li>
+            <a href="table.html">Table</a>
+            <ul class="dropdown">
+              <li><a href="video.html">Video</a></li>
+              <li><a href="form.html">Form</a></li>
+              <li>
+                <a href="table.html">Table</a>
+                <ul class="dropdown">
+                  <li><a href="video.html">Video</a></li>
+                  <li><a href="form.html">Form</a></li>
+                  <li><a href="table.html">Table</a></li>
+                  <li>
+                    <a href="blog.html">Blog</a>
+                    <ul class="dropdown">
+                      <li><a href="video.html">Video</a></li>
+                      <li><a href="form.html">Form</a></li>
+                      <li><a href="table.html">Table</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>HTML Table</h1>
+      <table>
+        <caption>
+          Employee Salary Data
+        </caption>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Microsoft</td>
+            <td>$1000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Steve jobs</td>
+            <td>Apple</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Google</td>
+            <td>$1100</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Mark Zukerberg</td>
+            <td>Facebook</td>
+            <td>$1300</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total Employee: 4</td>
+          </tr>
+        </tfoot>
+      </table>
+      <ul>
+        <li>table: table</li>
+        <li>table head: thead</li>
+        <li>table body: tbody</li>
+        <li>table footer: tfoot</li>
+        <li>table row: tr</li>
+        <li>table data or table cell : td</li>
+        <li>table header cell : th</li>
+      </ul>
+    </main>
+
+
+    <!-- ul.dropdown#user>li.item*5>a.menuiten -->
+    <ul class="dropdown" id="user">
+        <li class="item"><a href="" class="menuiten">1</a></li>
+        <li class="item"><a href="" class="menuiten">2</a></li>
+        <li class="item"><a href="" class="menuiten">3</a></li>
+        <li class="item"><a href="" class="menuiten">4</a></li>
+        <li class="item"><a href="" class="menuiten">5</a></li>
+    </ul>
+    <!-- main>article.blog*3>h3{My blog $}+p>lorem10^p>lorem50 -->
+    <main>
+        <article class="blog">
+            <h3>My blog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nemo.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio reprehenderit illo eos recusandae quia obcaecati delectus, eaque, asperiores itaque iste accusamus, nesciunt qui deserunt placeat tempore! Corporis ipsam autem, voluptates commodi provident doloribus quo consequatur quam fugit, dolores at quis. Praesentium soluta reiciendis iste sunt nulla eum quidem, quisquam suscipit.</p>
+        </article>
+        <article class="blog">
+            <h3>My blog 2</h3>
+            <p>Sed, libero adipisci? Expedita cupiditate, saepe odio optio provident unde.</p>
+            <p>Debitis repudiandae eos minus hic quas voluptas asperiores ex nemo at velit non, aliquam quos aliquid sequi dolore ipsam earum necessitatibus nobis vero dignissimos voluptatibus iure cupiditate corrupti! Provident, natus reiciendis quo fuga saepe cupiditate laudantium fugiat est nihil dolore non ad ratione velit incidunt voluptatem quidem sequi in harum?</p>
+        </article>
+        <article class="blog">
+            <h3>My blog 3</h3>
+            <p>Quidem enim laborum explicabo illo unde sequi consequatur vel temporibus.</p>
+            <p>Distinctio ad iusto illum voluptates labore eveniet alias odio accusamus perspiciatis dignissimos iste, totam numquam animi quis assumenda voluptatem nulla iure inventore dolore architecto ipsam. Numquam illum inventore animi, amet similique odit molestias praesentium voluptate nisi cupiditate facere ea, minima accusantium consequuntur doloremque totam. Minima eveniet cum iusto iure quaerat!</p>
+        </article>
+    </main>
+  </body>
+</html>
